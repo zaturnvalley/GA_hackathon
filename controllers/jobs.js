@@ -1,4 +1,4 @@
-var express = require('express');
+(r(((( Bvar express = require('express');
 var Job = require('../models/schemas/job');
 var User = require('../models/user');
 var router = express.Router();
