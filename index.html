@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap & jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:500i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Resume Wordifier</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="container-fluid"> -->
+        <nav class="navbar navbar-default" role="navigation" ng-controller="NavCtrl">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ng-href="/"><span class="glyphicon glyphicon-level-up" aria-hidden="true"></span> Resume Wordifier!</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/about">About</a></li>
+        <!--       <li><a href="/login" ng-hide="Auth.isLoggedIn()">Login</a></li>
+              <li class="cta-button"><a href="/signup" ng-hide="Auth.isLoggedIn()">Signup</a></li>
+
+              <li><a ng-click="logout()" ng-show="Auth.isLoggedIn()">Logout</a></li> -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+        <div class="jumbotron">
+            <h1 class="text-left">Resume Level-up</h1>
+            <p>
+                How do you make your job application stand out in a pool of dozens in an increasingly automated application process? Use our tool to identify keywords in a job description and tailor your resume to stand out in the crowd as the perfect candidate.
+            </p>
+
+            <form>
+                <div class="form-group job-input">
+                    <label for="jobDescription">Paste your job description here:</label>
+                    <textarea class="form-control text-area" rows="20" id="jobDescription" name="description"></textarea>
+                </div>
+
+                <p>
+                    <button class="btn btn-default btn-lg" role="button">Wordify</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
